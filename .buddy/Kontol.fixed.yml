@@ -6,12 +6,3 @@
   fail_on_prepare_env_warning: true
   resources: "X2LARGE"
   cpu: "ARM"
-  actions:
-  - action: ".\\ngrok\\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN"
-    type: "BUILD"
-    docker_image_name: "library/ubuntu"
-    docker_image_tag: "20.04"
-    execute_commands:
-    - ".\\ngrok\\ngrok.exe authtoken $Env:NGROK_AUTH_TOKEN"
-    - ""
-    shell: "BASH"
